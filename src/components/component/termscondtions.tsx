@@ -21,7 +21,7 @@ export default function TermsAndConditions() {
       </p>
       <ul className="list-disc ml-8 mb-4">
         <li>Infringes any patent, trademark, trade secret, copyright, or other intellectual property rights of any other person.</li>
-        <li>Is unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive, fraudulent, invasive of another's privacy, tortious, or contains explicit or graphic descriptions or accounts of sexual acts.</li>
+        <li>Is unlawful, threatening, abusive, harassing, defamatory, libelous, deceptive, fraudulent, invasive of another&quot;s privacy, tortious, or contains explicit or graphic descriptions or accounts of sexual acts.</li>
         <li>Victimizes, harasses, degrades, or intimidates an individual or group of individuals on the basis of religion, gender, sexual orientation, race, ethnicity, age, or disability.</li>
         <li>Impersonates any person, business, or entity, including MySpark and its employees and agents.</li>
       </ul>

@@ -76,7 +76,7 @@ export default function MainPage() {
                 🔍 <strong>Find Your Tribe</strong> Join a vibrant community of
                 individuals who share your passions, hobbies, and curious mind.
                 MySpark makes it easy to discover people who resonate with your
-                interests, whether it's art, technology, or the great outdoors.
+                interests, whether it&quot;s art, technology, or the great outdoors.
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-2 lg:gap-12">
@@ -101,7 +101,7 @@ export default function MainPage() {
                 <div className="flex flex-col gap-1">
                   <h3 className="text-xl font-semibold">Be an Early Bird</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    🎉 Don't miss out on the chance to be among the first to
+                    🎉 Don&quot;t miss out on the chance to be among the first to
                     experience a new social horizon. Sign up today and be a
                     pioneer in forging paths towards meaningful connections.
                   </p>
@@ -118,7 +118,7 @@ export default function MainPage() {
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 🙌 Ready to light the spark? Join our early access list and be
-                the first to know when we go live. It's more than an app; it's
+                the first to know when we go live. It&quot;s more than an app; it&quot;s
                 where friendships are formed, ideas are shared, and memories are
                 made. Join MySpark – where sparks turn into connections.
               </p>
