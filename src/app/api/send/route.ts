@@ -1,22 +1,25 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { MySparkBetaEmail } from "../../../components/component/betaemail";
 import { Resend } from "resend";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: NextApiRequest): Promise<any> {
-  const email = req.body.email as string;
+export async function POST(req: NextRequest): Promise<NextResponse> {
+  const json = await req.json();
 
   const { data, error } = await resend.emails.send({
     from: "MySpark <beta@myspark.social>",
-    to: [`${email}`],
+    to: [json.toEmail],
     subject: "Thank you for expressing interest in the beta!",
     react: MySparkBetaEmail(),
   });
 
   if (error) {
-    return NextResponse.json({ success: false, message: error.message, email: email });
+    return NextResponse.json({
+      success: false,
+      message: error.message,
+      email: json.toEmail,
+    });
   }
 
   return NextResponse.json({

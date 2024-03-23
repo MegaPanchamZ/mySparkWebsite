@@ -7,7 +7,7 @@ function SubscribeNewsletter() {
 
   const handleSubscribe = async (evt: { preventDefault: () => void }) => {
     evt.preventDefault();
-    const res = await fetch("/api/send", {
+    const res = await fetch("/api/send/", {
       method: "POST",
       body: JSON.stringify({ toEmail: email }),
       headers: {
@@ -20,6 +20,9 @@ function SubscribeNewsletter() {
     } else {
       alert(payload.message + " " + payload.email || "An error occurred");
     }
+
+    // Clear the email field
+    setEmail("");
   };
 
   return (
