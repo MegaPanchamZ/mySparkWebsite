@@ -62,7 +62,7 @@ export default function MainPage() {
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-primary to-white dark:to-neutral-900 dark:from-secondary flex items-center justify-center">
           <div className="container max-w-full grid items-center gap-6 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-10 justify-center items-center">
-              <div className="max-w-[1250px] align-middle justify-center rounded-full bg-white dark:bg-neutral-800 p-4">
+              <div className="align-middle justify-center rounded-full bg-white dark:bg-neutral-800 p-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-gray-100 flex flex-col md:flex-row items-center justify-center">
                   <img
                     src="/icon.png"
