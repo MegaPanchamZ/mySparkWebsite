@@ -36,9 +36,16 @@ export default function MainPage() {
 
   return (
     <div className={`flex flex-col min-h-[100dvh] ${isDarkMode ? "dark" : ""}`}>
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-white dark:bg-gray-900">
+      <header className="px-4 lg:px-6 h-14 flex items-center bg-white dark:bg-neutral-900">
         <Link className="flex items-center justify-center" href="#">
-          <span className="ml-2 font-bold text-xl text-primary dark:text-secondary">
+          <Image
+            alt="MySpark Logo"
+            height="32"
+            src="/icon.png"
+            width="32"
+            className="mr-2"
+          />
+          <span className="flex justify-center align-middle ml-2 font-bold text-xl text-gray-800 dark:text-neutral-50">
             MySpark
           </span>
         </Link>
@@ -52,12 +59,19 @@ export default function MainPage() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-primary to-white dark:to-gray-900 dark:from-secondary">
-          <div className="container max-w-full grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-10">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-gray-100">
-                Welcome to MySpark – your next social discovery!
-              </h2>
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-primary to-white dark:to-neutral-900 dark:from-secondary flex items-center justify-center">
+          <div className="container max-w-full grid items-center gap-6 px-4 text-center md:px-6 lg:gap-10">
+            <div className="space-y-10 justify-center items-center">
+              <div className="max-w-[1250px] align-middle justify-center rounded-full bg-white dark:bg-neutral-800 p-4">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-gray-100 flex flex-col md:flex-row items-center justify-center">
+                  <img
+                    src="/icon.png"
+                    alt="Star"
+                    className="mb-4 md:mb-0 md:mr-4 h-16 w-16"
+                  />
+                  <span>MySpark - Your Next Social Discovery!</span>
+                </h2>
+              </div>
               <p className="mx-auto max-w-[800px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-100">
                 🌟 <strong>Connect, Share, Discover!</strong> Unlock a world
                 tailored to your interests! At MySpark, we believe every
@@ -66,7 +80,7 @@ export default function MainPage() {
                 where genuine connections are just a spark away.
               </p>
             </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
+            <div className="mx-auto w-full max-w-sm space-y-6">
               <SubscribeNewsletter />
               <p className="text-xs text-gray-700 dark:text-gray-100">
                 Sign up for early access.{" "}
@@ -80,7 +94,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-neutral-900">
           <div className="container max-w-full grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-10">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary dark:text-secondary">
@@ -90,7 +104,8 @@ export default function MainPage() {
                 🔍 <strong>Find Your Tribe</strong> Join a vibrant community of
                 individuals who share your passions, hobbies, and curious mind.
                 MySpark makes it easy to discover people who resonate with your
-                interests, whether it's art, technology, or the great outdoors.
+                interests, whether it&apos;s art, technology, or the great
+                outdoors.
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 lg:grid-cols-2 lg:gap-12">
@@ -119,8 +134,8 @@ export default function MainPage() {
                     Be an Early Bird
                   </h3>
                   <p className="text-sm text-gray-700 dark:text-gray-100">
-                    🎉 Don't miss out on the chance to be among the first to
-                    experience a new social horizon. Sign up today and be a
+                    🎉 Don&apos;t miss out on the chance to be among the first
+                    to experience a new social horizon. Sign up today and be a
                     pioneer in forging paths towards meaningful connections.
                   </p>
                 </div>
@@ -128,7 +143,7 @@ export default function MainPage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-primary dark:from-gray-900 dark:to-secondary">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-primary dark:from-neutral-900 dark:to-secondary">
           <div className="container max-w-full grid items-center gap-6 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-gray-900 dark:text-gray-100">
@@ -136,9 +151,10 @@ export default function MainPage() {
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-100">
                 🙌 Ready to light the spark? Join our early access list and be
-                the first to know when we go live. It's more than an app; it's
-                where friendships are formed, ideas are shared, and memories are
-                made. Join MySpark – where sparks turn into connections.
+                the first to know when we go live. It&apos;s more than an app;
+                it&apos;s where friendships are formed, ideas are shared, and
+                memories are made. Join MySpark – where sparks turn into
+                connections.
               </p>
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
@@ -151,20 +167,20 @@ export default function MainPage() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white dark:bg-gray-900">
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white dark:bg-neutral-900">
         <p className="text-xs text-gray-500 dark:text-gray-400">
           © 2024 MySpark. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-xs hover:underline underline-offset-4 text-gray-500 dark:text-gray-400"
-            href="#"
+            href="/terms-of-service"
           >
             Terms of Service
           </Link>
           <Link
             className="text-xs hover:underline underline-offset-4 text-gray-500 dark:text-gray-400"
-            href="#"
+            href="/privacy"
           >
             Privacy
           </Link>
