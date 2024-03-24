@@ -28,7 +28,7 @@ function SubscribeNewsletter() {
     <div className="flex flex-col items-center mb-10">
       <form onSubmit={handleSubscribe} className="flex space-x-2">
         <Input
-          className="max-w-lg flex-1 rounded-full border-2 border-[#FF7A00] focus:border-[#FFE81C] focus:ring-2 focus:ring-[#FFE81C]"
+          className="max-w-lg flex-1 rounded-full border-2 text-gray-900 dark:text-neutral-50 border-[#FF7A00] focus:border-[#FFE81C] focus:ring-2 focus:ring-[#FFE81C]"
           placeholder="Enter your email"
           type="email"
           value={email}
