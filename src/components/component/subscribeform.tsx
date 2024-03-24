@@ -20,7 +20,6 @@ function SubscribeNewsletter() {
     } else {
       alert(payload.message + " " + payload.email || "An error occurred");
     }
-
     // Clear the email field
     setEmail("");
   };
@@ -29,13 +28,18 @@ function SubscribeNewsletter() {
     <div className="flex flex-col items-center mb-10">
       <form onSubmit={handleSubscribe} className="flex space-x-2">
         <Input
-          className="max-w-lg flex-1"
+          className="max-w-lg flex-1 rounded-full border-2 border-[#FF7A00] focus:border-[#FFE81C] focus:ring-2 focus:ring-[#FFE81C]"
           placeholder="Enter your email"
           type="email"
           value={email}
           onChange={(evt) => setEmail(evt.target.value)}
         />
-        <Button type="submit">Sign Up</Button>
+        <Button
+          type="submit"
+          className="bg-[#FF7A00] text-white font-semibold rounded-full px-6 py-3 hover:bg-[#FFE81C] hover:text-[#FF7A00] transition-colors duration-300"
+        >
+          Sign Up
+        </Button>
       </form>
     </div>
   );
